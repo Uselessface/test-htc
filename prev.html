@@ -1,0 +1,178 @@
+<ul class="tabs clearfix">
+				<li class="tab_content clearfix">
+					<input type="radio" name="tab-menu" id="tab1" checked>
+      				<label for="tab1">Фильмы</label>
+					<div class="tab_item">
+						<h2><img src="" alt="">Новинки</h2> 
+						<ul class="news_list">
+							<li>
+								<div class="news_prev">
+									<img src="" alt="">
+								</div>
+								<p class="news_topic">Мульт в кино. Выпуск №103. Некогда грустить!</p>
+							</li>
+							<li>
+								<div class="news_prev">
+									<img src="" alt="">
+								</div>
+								<p class="news_topic">Новый Бэтмен</p>
+							</li>
+							<li>
+								<div class="news_prev">
+									<img src="" alt="">
+								</div>
+								<p class="news_topic">Однажды... в Голливуде</p>
+							</li>
+							<li>
+								<div class="news_prev">
+									<img src="" alt="">
+								</div>
+								<p class="news_topic">Стриптизёрши</p>
+							</li>
+						</ul>
+						<h2>Жанры</h2>
+						<ul class="genres">
+							<li>
+								
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="tab_content">
+					<input type="radio" name="tab-menu" id="tab2">
+      				<label for="tab2">Телеканалы</label>	
+					<div class="tab_item">
+						<ul class="channel_list">
+							<li>
+								<div class="channel_logo">
+									
+								</div>
+								<div class="channel_program">
+									<h6></h6>
+									<ul>
+										<li>
+											<span></span>
+											<span></span>
+										</li>
+										<li>
+											<span></span>
+											<span></span>
+										</li>
+										<li>
+											<span></span>
+											<span></span>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="channel_logo">
+									
+								</div>
+								<div class="channel_program">
+									<h6></h6>
+									<ul>
+										<li>
+											<span></span>
+											<span></span>
+										</li>
+										<li>
+											<span></span>
+											<span></span>
+										</li>
+										<li>
+											<span></span>
+											<span></span>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="channel_logo">
+									
+								</div>
+								<div class="channel_program">
+									<h6></h6>
+									<ul>
+										<li>
+											<span></span>
+											<span></span>
+										</li>
+										<li>
+											<span></span>
+											<span></span>
+										</li>
+										<li>
+											<span></span>
+											<span></span>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="channel_logo">
+									
+								</div>
+								<div class="channel_program">
+									<h6></h6>
+									<ul>
+										<li>
+											<span></span>
+											<span></span>
+										</li>
+										<li>
+											<span></span>
+											<span></span>
+										</li>
+										<li>
+											<span></span>
+											<span></span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+
+
+
+
+
+
+
+
+.tabs{
+	margin: 0 auto;
+	position: relative;
+}
+.tab_content{
+	display: inline-block;
+}
+.tab_item{
+	display: none;
+    position: absolute;
+}
+label {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}
+label:nth-child(2){
+	margin-left: 24px;
+}
+input[type="radio"]:checked + label {
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #E5261E;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked ~ div {
+  display: block;
+}

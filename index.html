@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="assets/script/OverlayScrollbars/css/OverlayScrollbars.css">
+	<title>Видеосервис</title>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<div class="icon">
+					<img src="assets/img/sign.jpg" alt="logo">
+				</div>
+				<span>Видеосервис</span>
+			</div>
+			<div class="input-form">
+				<form action="" class="search_form">
+					<input type="text" name="search" id="" placeholder="Поиск...">
+					<button>Найти</button>
+				</form>
+			</div>
+			<div class="btn">
+				<input type="text" name="username_auth" id="username_login">
+				<button class="modal_open">Войти</button>
+			</div>
+		</div>
+	</header>
+	<section class="news">
+		<div class="wrapper">
+			<div class="tabs">
+				<span class="tab">Фильмы</span>
+				<span class="tab">Телеканалы</span>
+			</div>
+			<div class="tab_content">
+				<div class="tab_item">
+					<h2>🔥 Новинки</h2> 
+					<ul class="news_list">
+						<li>
+							<div class="news_prev">
+								<img src="assets/img/cat.png" alt="">
+							</div>
+							<p class="news_topic">Мульт в кино. Выпуск №103. Некогда грустить!</p>
+						</li>
+						<li>
+							<div class="news_prev">
+								<img src="assets/img/batman.jpg" alt="">
+							</div>
+							<p class="news_topic">Новый Бэтмен</p>
+						</li>
+						<li>
+							<div class="news_prev">
+								<img src="assets/img/hollywood.jpg" alt="">
+								<p class="news_description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</p>
+							</div>
+							<p class="news_topic">Однажды... в Голливуде</p>
+						</li>
+						<li>
+							<div class="news_prev">
+								<img src="assets/img/stripper.jpg" alt="">
+							</div>
+							<p class="news_topic">Стриптизёрши</p>
+						</li>
+					</ul>
+					<h2>Жанры</h2>
+					<ul class="genres">
+						<li>
+							<div class="genre comedy">
+								<p class="bg-comedy"></p>
+								<p>Комедии</p>
+							</div>	
+						</li>
+						<li>
+							<div class="genre drama">
+								<p class="bg-drama"></p>
+								<p>Драмы</p>
+							</div>	
+						</li>
+						<li>
+							<div class="genre scifi">
+								<p class="bg-scifi"></p>
+								<p>Фантастика</p>
+							</div>	
+						</li>
+						<li>
+							<div class="genre horror">
+								<p class="bg-horror"></p>
+								<p>Ужасы</p>
+							</div>	
+						</li>
+					</ul>
+				</div>
+				<div class="tab_item">
+					<ul class="channel_list">
+						<li class="channel_list_item">
+							<div class="channel_logo">
+								<img src="assets/img/1st.png" alt="">	
+							</div>
+							<div class="channel_program">
+								<h6>Первый канал</h6>
+								<ul>
+									<li>
+										<span>13:00</span>
+										<span>Новости (с субтитрами)</span>
+									</li>
+									<li>
+										<span>14:00</span>
+										<span>Давай поженимся</span>
+									</li>
+									<li>
+										<span>15:00</span>
+										<span>Другие новости</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="channel_list_item">
+							<div class="channel_logo">
+								<img src="assets/img/2x2.jpg" alt="">	
+							</div>
+							<div class="channel_program">
+								<h6>2х2</h6>
+								<ul>
+									<li>
+										<span>13:00</span>
+										<span>МУЛЬТ ТВ. Сезон 4, 7 серия</span>
+									</li>
+									<li>
+										<span>14:00</span>
+										<span>ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</span>
+									</li>
+									<li>
+										<span>15:00</span>
+										<span>БУРДАШЕВ. Сезон 1, 20 серия</span>
+									</li>
+								</ul>
+							</div>
+						</li>	
+						<li class="channel_list_item">
+							<div class="channel_logo">
+								<img src="assets/img/rbc.png" alt="">	
+							</div>
+							<div class="channel_program">
+								<h6>РБК</h6>
+								<ul>
+									<li>
+										<span>13:00</span>
+										<span>ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</span>
+									</li>
+									<li>
+										<span>14:00</span>
+										<span>ДЕНЬ. Главные темы</span>
+									</li>
+									<li>
+										<span>15:00</span>
+										<span>Главные новости</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="channel_list_item">
+							<div class="channel_logo">
+								<img src="assets/img/amedia.png" alt="">	
+							</div>
+							<div class="channel_program">
+								<h6>AMEDIA PREMIUM</h6>
+								<ul>
+									<li>
+										<span>13:00</span>
+										<span>Клиент всегда мёртв</span>
+									</li>
+									<li>
+										<span>14:00</span>
+										<span>Голодные игры: Сойка-пересмешница. Часть I</span>
+									</li>
+									<li>
+										<span>15:00</span>
+										<span>Секс в большом городе</span>
+									</li>
+								</ul>
+							</div>
+						</li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="modal">
+			<div class="modal_container">
+				<h2>Вход</h2>
+				<form class="modal_form" action="" id="modal_form">
+					<input type="text" name="login" id="username" placeholder="Логин">
+					<input type="text" name="password" id="password" placeholder="Пароль">
+					<label class="modal_checkbox">
+						<input type="checkbox" id="login_check">
+						<span>Запомнить</span>
+					</label>
+				</form>
+				<div class="btn">
+					<button type="submit" id="user_submit">
+						Войти
+					</button>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<footer>
+		<div class="wrapper">
+			<div class="footer_logo">
+				<img src="assets/img/htc-cs-logo.png" alt="">
+			</div>
+			<ul>
+				<li>426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</li>
+				<li>+7 (3412) 93-88-61, 43-29-29</li>
+				<li><a href="https://htc-cs.ru/">htc-cs.ru</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script>
+        $(function(){
+
+        })
+    </script> 
+    <script type="text/javascript" src="assets/script/main.js"></script>  	
+    <script src="assets/script/OverlayScrollbars/js/jquery.overlayScrollbars.js"></script>
+    <script src="assets/script/jquery.cookie/jquery.cookie.js"></script>
+</body>
+</html>
