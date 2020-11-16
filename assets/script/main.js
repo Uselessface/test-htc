@@ -2,14 +2,10 @@
 // Я надеюсь, что если я к вам попаду, то смогу этому обучиться,готов вкалывать на поприще js//
 	
 
-
-
-
-
 $(document).ready(function() {
 
 
-	/tabs/
+	//tabs//
 		$(".tab_item").not(":first").hide();
 	$(".wrapper .tab").click(function() {
 		$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
@@ -22,7 +18,7 @@ $(document).ready(function() {
 		});
 
 
-
+	//modal form and container//	
 	$('.modal_open').click(function() {
 		$('.modal').fadeIn();
 		return false;
@@ -46,7 +42,7 @@ $(document).ready(function() {
 		}
 	});
 	
-
+	//cookie attempt//
     $('#user_submit').click(function () {
         $.cookie('name', $('#username').val(), {
             expires: 7,

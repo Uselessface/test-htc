@@ -88,9 +88,26 @@ header .wrapper{
 	line-height: 19px;
 	text-align: right;
 }
+/*--------------------------------TABS------------------*/
+.tabs{
+	margin: 0 auto 32px;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 33px;
+	text-align: center;
+}
+.tabs span{
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 24px;
+}
+.active{
+	color: #E5261E;
+	border-bottom: 2px solid #E5261E;
+	padding-bottom: 9px;
+}
 
-
-
+/*--------------------------------NEWS LIST-----------------------------*/
 .news{
 	margin: 48px 0 0 0;
 }
@@ -138,29 +155,13 @@ header .wrapper{
 .news_prev:hover > .news_description{
 	visibility: visible;
 }
-.tabs{
-	margin: 0 auto 32px;
-	font-weight: 500;
-	font-size: 28px;
-	line-height: 33px;
-	text-align: center;
-}
-.tabs span{
-	display: inline-block;
-	cursor: pointer;
-	margin-left: 24px;
-}
-.active{
-	color: #E5261E;
-	border-bottom: 2px solid #E5261E;
-	padding-bottom: 9px;
-}
+
+/*---------------------------------------GENRES-------------------------*/
 .genres{
 	margin-top: 16px;
 	display: flex;
 	justify-content: space-between;
 }
-
 .genre{
 	width: 280px;
 	height: 208px;
@@ -219,6 +220,8 @@ header .wrapper{
     width: 48px; height: 48px;
     background: url('assets/img/genre_icons.png') -143px -0;
 }
+
+/*-------------------------------CHANNEL LIST-------------------------*/
 .channel_list{
 	margin-top: 27px;
 	max-height: 696px;
@@ -259,6 +262,8 @@ h6{
 .channel_program > ul > li > span:nth-child(2){
 	margin-left: 15px;
 }
+
+/*----------------------MODAL CONTAINER----------------------------*/
 .modal{
 	display: none;
 }
@@ -281,7 +286,8 @@ h6{
 	padding: 36px;
 	position: fixed;
 	top: 25%;
-	left: 42%;
+	left: 50%;
+	margin-left: -152px;
 	height: 394px;
 	width: 304px;
 	border-radius: 8px;
@@ -365,6 +371,8 @@ label input[type=checkbox] {
 	margin-top: 110px;
 }
 
+/*-------------------FOOTER--------------------*/
+
 footer{
 	margin: 72px 0 0 0;
 	padding: 22px 0 0 0;
@@ -384,4 +392,151 @@ footer ul > li > a{
 	font-weight: 500;
 	color: #1F4766;
 	text-decoration: none;
+}
+
+@media only screen and (max-width : 420px) {
+
+	.wrapper{
+		margin: 0 auto;
+		max-width: 310px;
+	}
+	/*---------------------------GLOBAL-----------------------------*/
+
+	/*---------------------------HEADER------------------------------*/
+	header .wrapper{
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding-top: 34px;
+		flex-direction: column;
+	}
+	.logo{
+		font-size: 16px;
+	}
+	.search_form{
+	}
+	.search_form > input{
+		width: 280px;
+	}
+	.search_form > button{
+		display: none;
+	}
+	#username_login{
+		color: #333333;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: right;
+	}
+	/*--------------------------------TABS------------------*/
+	.tabs{
+		font-size: 20px;
+	}
+	.tabs span{
+		display: inline-block;
+		cursor: pointer;
+		margin-left: 14px;
+	}
+
+	/*--------------------------------NEWS LIST-----------------------------*/
+	.news{
+		margin: 28px auto 0;
+	}
+	.news > h2 {
+		font-size: 20px;
+	}
+	.news_list{
+		flex-direction: column;
+	}
+	.news_topic{
+		margin-top: 8px;
+	}
+	/*---------------------------------------GENRES-------------------------*/
+	.genres{
+		margin-top: 16px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.genre > p:nth-child(2){
+		margin: 32px 0 24px;
+		font-size: 20px;
+		line-height: 24px;
+		color: #ffffff;
+	}
+	.genre{
+		margin-bottom: 15px;
+	}
+	/*-------------------------------CHANNEL LIST-------------------------*/
+	.channel_list{
+		margin-top: 27px;
+		max-height: 696px;
+		max-width: 100%;
+	}
+	.channel_list_item{
+		display: flex;
+		height: 100px;
+		width: 300px;
+		border-radius: 8px;
+		background: #F2F2F2;
+		margin-bottom: 16px;
+	}
+	.channel_logo{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 0 1 30%;
+	}
+	.channel_logo > img{
+		transform: scale(0.7);
+	}
+	.channel_program{
+		flex: 0 1 60%;
+	}
+	h6{
+		margin: 10px 0 8px;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 24px;
+		color: #333333;
+	}
+	.channel_program > ul > li{
+		margin-bottom: 6px;
+		font-size: 6px;
+		line-height: 11px;
+	}
+	.channel_program > ul > li:nth-child(1){
+		color: #E5261E;
+	}
+	.channel_program > ul > li > span:nth-child(2){
+		margin-left: 5px;
+	}
+	/*-------------------FOOTER--------------------*/
+
+	footer{
+		margin: 72px 0 0 0;
+		padding: 22px 0 0 0;
+		background: #F2F2F2;
+	}
+	footer .wrapper{
+		display: flex;
+	}
+	.footer_logo{
+		padding-top: 15%;
+	}
+	.footer_logo > img {
+		transform: scale(2);
+	}
+	footer  ul{
+		margin:0 0 25px 40px;
+	}
+	footer ul > li:nth-child(2){
+		margin: 6px 0 10px;
+	}
+	footer ul > li > a{
+		font-weight: 500;
+		color: #1F4766;
+		text-decoration: none;
+	}
+
 }
