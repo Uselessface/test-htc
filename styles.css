@@ -96,7 +96,7 @@ header .wrapper{
 	line-height: 33px;
 	text-align: center;
 }
-.tabs span{
+.tab{
 	display: inline-block;
 	cursor: pointer;
 	margin-left: 24px;
@@ -111,7 +111,7 @@ header .wrapper{
 .news{
 	margin: 48px 0 0 0;
 }
-.news > h2 {
+.section_header{
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 28px;
@@ -121,26 +121,26 @@ header .wrapper{
 	justify-content: space-between;
 	margin:16px 0 24px;
 }
-.news_list > li{
+.news_list__item{
 	max-width: 280px;
 	height: 434px;
 	overflow: hidden;
 	display: inline-block;
 	cursor: pointer;
 }
-.news_prev{
+.news__prev{
 	width: 280px;
 	height: 370px;
 	overflow: hidden;
 	border-radius: 8px;
 }
-.news_prev img{
+.news__prev__img{
 	display: block;
 }
-.news_topic{
+.news__topic{
 	margin-top: 16px;
 }
-.news_description{
+.news__description{
 	height: 100%;
 	background: rgba(51,51,51, 0.8);
 	visibility: hidden;
@@ -150,9 +150,9 @@ header .wrapper{
 	padding: 16px;
 	position: relative;
 	z-index: 999;
-	top: -370px;
+	top: -374px;
 }
-.news_prev:hover > .news_description{
+.news__prev:hover > .news__description{
 	visibility: visible;
 }
 
@@ -204,19 +204,19 @@ header .wrapper{
 	background: linear-gradient(127.83deg,rgba(130, 130, 130, 1),rgba(51, 51, 51, 1));
 }
 
-.bg-horror {
+.horror__bg {
     width: 48px; height: 43px;
     background: url('assets/img/genre_icons.png') -47px -0;
 }
-.bg-scifi {
+.scifi__bg {
     width: 48px; height: 48px;
     background: url('assets/img/genre_icons.png') -95px -0;
 }
-.bg-drama {
+.drama__bg {
     width: 47px; height: 48px;
     background: url('assets/img/genre_icons.png.') -0 -0;
 }
-.bg-comedy {
+.comedy__bg {
     width: 48px; height: 48px;
     background: url('assets/img/genre_icons.png') -143px -0;
 }
@@ -227,7 +227,7 @@ header .wrapper{
 	max-height: 696px;
 	min-width: 100%;
 }
-.channel_list_item{
+.channel_list__item{
 	display: flex;
 	height: 162px;
 	width: 1180px;
@@ -235,31 +235,31 @@ header .wrapper{
 	background: #F2F2F2;
 	margin-bottom: 16px;
 }
-.channel_logo{
+.channel__logo{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex: 0 1 35%;
 }
-.channel_program{
+.channel__program{
 	flex: 0 1 65%;
 }
-h6{
+.channel__header{
 	margin: 21px 0 17px;
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 24px;
 	color: #333333;
 }
-.channel_program > ul > li{
+.progrem__item{
 	margin-bottom: 12px;
 	font-size: 16px;
 	line-height: 19px;
 }
-.channel_program > ul > li:nth-child(1){
+.first{
 	color: #E5261E;
 }
-.channel_program > ul > li > span:nth-child(2){
+.film{
 	margin-left: 15px;
 }
 

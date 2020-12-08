@@ -6,14 +6,14 @@ $(document).ready(function() {
 
 
 	//tabs//
-		$(".tab_item").not(":first").hide();
+		$(".tab__item").not(":first").hide();
 	$(".wrapper .tab").click(function() {
 		$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
-		$(".tab_item").hide().eq($(this).index()).fadeIn()
+		$(".tab__item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
 
 	/custom_scrollbar/
-		$(".channel_list").overlayScrollbars({
+		$(".channel__list").overlayScrollbars({
 			className:"os-theme-dark",
 		});
 
