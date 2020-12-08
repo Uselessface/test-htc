@@ -173,7 +173,7 @@ header .wrapper{
 	align-items: center;
 	flex-direction: column;
 }
-.genre > p:nth-child(2){
+.genre__name{
 	margin: 32px 0 24px;
 	font-size: 20px;
 	line-height: 24px;
@@ -206,7 +206,7 @@ header .wrapper{
 
 .horror__bg {
     width: 48px; height: 43px;
-    background: url('assets/img/genre_icons.png') -47px -0;
+    background: url('assets/img/genre_icons.png') -47px -0px;
 }
 .scifi__bg {
     width: 48px; height: 48px;
@@ -214,7 +214,7 @@ header .wrapper{
 }
 .drama__bg {
     width: 47px; height: 48px;
-    background: url('assets/img/genre_icons.png.') -0 -0;
+    background: url('assets/img/genre_icons.png') -0 -0;
 }
 .comedy__bg {
     width: 48px; height: 48px;
@@ -278,7 +278,7 @@ header .wrapper{
 	opacity: 0.6;
 	z-index: 999;
 }
-.modal_container{
+.modal__container{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -295,10 +295,10 @@ header .wrapper{
 	z-index: 99999;
 	opacity: 1;	
 }
-.modal_container > h2{
+.modal__container > h2{
 	font-size: 28px;
 }
-.modal_form > input:nth-child(-n+2){
+.modal__form > input:nth-child(-n+2){
 	height: 25px;
 	width: 232px;
 	margin-top: 25px;
@@ -306,7 +306,7 @@ header .wrapper{
 	padding-bottom: 6px;
 	outline: none;
 }
-.modal_form > input::placeholder{ 
+.modal__form > input::placeholder{ 
 	font-size: 16px;
 	line-height: 19px;
 	color: #828282;
@@ -320,7 +320,7 @@ label input[type=checkbox] {
 	height: 0;
 }
 
-.modal_checkbox {
+.modal__checkbox {
 	display: block;
 	margin: 25px 0 8px 0;
 	line-height: 22px;
@@ -328,7 +328,7 @@ label input[type=checkbox] {
 	user-select: none;
 	position: relative;
 }
-.modal_checkbox input[type=checkbox] {
+.modal__checkbox input[type=checkbox] {
 	position: absolute;
 	z-index: -1;
 	opacity: 0;
@@ -336,13 +336,13 @@ label input[type=checkbox] {
 	width: 0;
 	height: 0;
 }
-.modal_checkbox span {
+.modal__checkbox span {
 	display: inline-block;
 	position: relative; 
 	padding: 0 0 0 35px; 
 	line-height: 22px;    
 }
-.modal_checkbox span:before {
+.modal__checkbox span:before {
 	content: "";
 	display: inline-block;
 	width: 16px;
@@ -353,11 +353,11 @@ label input[type=checkbox] {
 	top: 0;
 	border: 1px solid #333333;
 }
-.modal_checkbox input[type=checkbox] + span:after {
+.modal__checkbox input[type=checkbox] + span:after {
 	content: "";	
 	opacity: 0;
 }
-.modal_checkbox input[type=checkbox]:checked + span:after {
+.modal__checkbox input[type=checkbox]:checked + span:after {
 	content: "✓";
 	color: #E5261E;
 	font-size:16px;
@@ -367,7 +367,7 @@ label input[type=checkbox] {
 	top: 0px;
 	opacity: 1;
 }
-.modal_container > .btn{
+.modal__container > .btn{
 	margin-top: 110px;
 }
 

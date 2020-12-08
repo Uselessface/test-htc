@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 
 	//modal form and container//	
-	$('.modal_open').click(function() {
+	$('.modal__open').click(function() {
 		$('.modal').fadeIn();
 		return false;
 	});	
@@ -37,7 +37,7 @@ $(document).ready(function() {
 	});
 	
 	$('.modal').click(function(e) {
-		if ($(e.target).closest('.modal_container').length == 0) {
+		if ($(e.target).closest('.modal__container').length == 0) {
 			$('.modal').fadeOut();					
 		}
 	});
