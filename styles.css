@@ -63,7 +63,7 @@ header .wrapper{
 .search_form > button:hover{
 	cursor: pointer;
 }
-.btn>button{
+.modal__open{
 	background: #E5261E;
 	border-radius: 4px;
 	width: 113px;
@@ -76,17 +76,25 @@ header .wrapper{
 	line-height: 19px;
 	color: #ffffff;
 }
-.btn>button:hover{
+.modal__open:hover{
 	background: #CC221B;
 	cursor: pointer;
 }
-
-#username_login{
+.logout:hover{
+	background: transparent;
+}
+#loggedIn{
 	color: #333333;
-	font-weight: 500;
+	font-weight: 700;
 	font-size: 16px;
 	line-height: 19px;
 	text-align: right;
+	padding: 0px 10px;
+}
+.logout{
+	width: 90px;
+	color: #E5261E;
+	background: transparent;
 }
 /*--------------------------------TABS------------------*/
 .tabs{
@@ -118,6 +126,7 @@ header .wrapper{
 }
 .news_list{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin:16px 0 24px;
 }
@@ -159,8 +168,9 @@ header .wrapper{
 /*---------------------------------------GENRES-------------------------*/
 .genres{
 	margin-top: 16px;
+	flex-wrap: wrap;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 .genre{
 	width: 280px;
@@ -473,7 +483,7 @@ footer ul > li > a{
 		max-height: 696px;
 		max-width: 100%;
 	}
-	.channel_list_item{
+	.channel_list__item{
 		display: flex;
 		height: 100px;
 		width: 300px;
@@ -481,34 +491,34 @@ footer ul > li > a{
 		background: #F2F2F2;
 		margin-bottom: 16px;
 	}
-	.channel_logo{
+	.channel__logo{
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex: 0 1 30%;
 	}
-	.channel_logo > img{
+	.channel__logo > img{
 		transform: scale(0.7);
 	}
-	.channel_program{
+	.channel__program{
 		flex: 0 1 60%;
 	}
-	h6{
+	.channel__header{
 		margin: 10px 0 8px;
 		font-weight: 500;
 		font-size: 12px;
 		line-height: 24px;
 		color: #333333;
 	}
-	.channel_program > ul > li{
+	.channel__program > ul > li{
 		margin-bottom: 6px;
 		font-size: 6px;
 		line-height: 11px;
 	}
-	.channel_program > ul > li:nth-child(1){
+	.channel__program > ul > li:nth-child(1){
 		color: #E5261E;
 	}
-	.channel_program > ul > li > span:nth-child(2){
+	.channel__program > ul > li > span:nth-child(2){
 		margin-left: 5px;
 	}
 	/*-------------------FOOTER--------------------*/

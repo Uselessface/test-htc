@@ -41,17 +41,54 @@ $(document).ready(function() {
 			$('.modal').fadeOut();					
 		}
 	});
-	
-	//cookie attempt//
-    $('#user_submit').click(function () {
-        $.cookie('name', $('#username').val(), {
-            expires: 7,
-            path: '/',
-        });
-        $('#username_login').val( $('#username').val())
-    });
-
-    const userName = $("#username").val($.cookie("name"));
 
 
+
+
+	const _ = (selector) => document.querySelector(selector);
+
+	function setCookie(name, value, props) {
+		props = props || {}
+		var exp = props.expires
+		if (typeof exp == "number" && exp) {
+			var d = new Date()
+			d.setTime(d.getTime() + exp*1000)
+			exp = props.expires = d
+		}
+		if(exp && exp.toUTCString) { props.expires = exp.toUTCString() }
+
+		value = encodeURIComponent(value)
+		var updatedCookie = name + "=" + value
+		for(var propName in props){
+			updatedCookie += "; " + propName
+			var propValue = props[propName]
+			if(propValue !== true){ updatedCookie += "=" + propValue }
+		}
+		document.cookie = updatedCookie
+	}
+
+	function getCookie(name) {
+		var matches = document.cookie.match(new RegExp(
+		  "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+		))
+		return matches ? decodeURIComponent(matches[1]) : undefined 
+	}
+
+	_('#user_submit').onclick = function() {
+	  setCookie('name', _('#username').value);
+	  _('#loggedIn').value = getCookie('name');
+	  $('#first').addClass('logout');
+	  $('#first').text('Выйти');
+	};
+
+	_('#loggedIn').onclick = function() {
+		this.value = ' ';
+	};
+
+	_('#loggedIn').onchange = function() {
+		setCookie('name', this.value);
+		_('#loggedIn').value = this.value;
+	}
+
+    
 });
