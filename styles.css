@@ -3,6 +3,25 @@ body{
 	font-family:'Rubik', sans-serif;
 	font-weight: normal;
 }
+*{
+	scrollbar-width: thin;          /* "auto" или "thin" */
+	scrollbar-color: grey lightgrey;   /* цвет бегунка и зоны отслеживания */
+}
+*::-webkit-scrollbar {
+	width: 12px;            /* ширина всей полосы прокрутки */
+	height: 30px;
+}
+
+*::-webkit-scrollbar-track {
+	background: gray;        /* цвет зоны отслеживания */
+	border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: lightgray;    /* цвет бегунка */
+	border-radius: 20px;       /* округлось бегунка */
+	border: 3px solid lightgray;  /* отступ вокруг бегунка */
+}
 section, footer, header{
 	margin: 0 auto;
 }
@@ -113,6 +132,10 @@ header .wrapper{
 	color: #E5261E;
 	border-bottom: 2px solid #E5261E;
 	padding-bottom: 9px;
+}
+.tab__item_scrollable{
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 /*--------------------------------NEWS LIST-----------------------------*/
@@ -276,6 +299,7 @@ header .wrapper{
 .film{
 	margin-left: 15px;
 }
+
 
 /*----------------------MODAL CONTAINER----------------------------*/
 .modal{
