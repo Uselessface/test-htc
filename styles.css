@@ -117,7 +117,7 @@ header .wrapper{
 
 /*--------------------------------NEWS LIST-----------------------------*/
 .news{
-	margin: 48px 0 0 0;
+	margin: 3rem auto 0;
 }
 .section_header{
 	font-weight: 500;
@@ -125,15 +125,13 @@ header .wrapper{
 	line-height: 28px;
 }
 .news_list{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 1.3rem;
 	margin:16px 0 24px;
 }
 .news_list__item{
-	max-width: 280px;
 	overflow: hidden;
-	display: inline-block;
 	cursor: pointer;
 }
 .news__prev{
@@ -410,7 +408,7 @@ footer ul > li > a{
 	text-decoration: none;
 }
 
-@media only screen and (max-width : 420px) {
+@media  screen and (max-width : 568px) {
 
 	.wrapper{
 		margin: 0 auto;
