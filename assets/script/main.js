@@ -1,18 +1,16 @@
-// С js и jquery возникли проблемы, ровно как и со сборщиком.//
-// Я надеюсь, что если я к вам попаду, то смогу этому обучиться,готов вкалывать на поприще js//
-	
+
 
 $(document).ready(function() {
 
 
 	//tabs//
-		$(".tab__item").not(":first").hide();
+	$(".tab__item").not(":first").hide();
 	$(".wrapper .tab").click(function() {
 		$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
 		$(".tab__item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
 
-	/custom_scrollbar/
+	//custom_scrollbar/
 		$(".channel__list").overlayScrollbars({
 			className:"os-theme-dark",
 		});
@@ -49,26 +47,26 @@ $(document).ready(function() {
 
 	function setCookie(name, value, props) {
 		props = props || {}
-		var exp = props.expires
+		let exp = props.expires
 		if (typeof exp == "number" && exp) {
-			var d = new Date()
+			let d = new Date()
 			d.setTime(d.getTime() + exp*1000)
 			exp = props.expires = d
 		}
 		if(exp && exp.toUTCString) { props.expires = exp.toUTCString() }
 
 		value = encodeURIComponent(value)
-		var updatedCookie = name + "=" + value
-		for(var propName in props){
+		let updatedCookie = name + "=" + value
+		for(let propName in props){
 			updatedCookie += "; " + propName
-			var propValue = props[propName]
+			let propValue = props[propName]
 			if(propValue !== true){ updatedCookie += "=" + propValue }
 		}
 		document.cookie = updatedCookie
 	}
 
 	function getCookie(name) {
-		var matches = document.cookie.match(new RegExp(
+		let matches = document.cookie.match(new RegExp(
 		  "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
 		))
 		return matches ? decodeURIComponent(matches[1]) : undefined 
@@ -77,8 +75,7 @@ $(document).ready(function() {
 	_('#user_submit').onclick = function() {
 	  setCookie('name', _('#username').value);
 	  _('#loggedIn').value = getCookie('name');
-	  $('#first').addClass('logout');
-	  $('#first').text('Выйти');
+	  $('#first').addClass('logout').text('Выйти');
 	};
 
 	_('#loggedIn').onclick = function() {

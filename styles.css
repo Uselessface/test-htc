@@ -152,13 +152,14 @@ header .wrapper{
 	grid-template-columns: repeat(4, 1fr);
 	grid-column-gap: 1.3rem;
 	margin:16px 0 24px;
+	padding: 0 .25rem;
 }
 .news_list__item{
 	overflow: hidden;
 	cursor: pointer;
 }
 .news__prev{
-	width: 280px;
+	max-width: 280px;
 	overflow: hidden;
 	border-radius: 8px;
 	position: relative;
@@ -267,7 +268,6 @@ header .wrapper{
 .channel_list__item{
 	display: flex;
 	height: 162px;
-	width: 1180px;
 	border-radius: 8px;
 	background: #F2F2F2;
 	margin-bottom: 16px;
@@ -436,7 +436,7 @@ footer ul > li > a{
 
 	.wrapper{
 		margin: 0 auto;
-		max-width: 310px;
+		width: 100%;
 	}
 	/*---------------------------GLOBAL-----------------------------*/
 
@@ -444,20 +444,22 @@ footer ul > li > a{
 	header .wrapper{
 		display: flex;
 		align-items: flex-start;
-		justify-content: space-between;
-		padding-top: 34px;
-		flex-direction: column;
+		justify-content: flex-start;
+		padding: 34px 5px;
+		flex-wrap: wrap;
 	}
 	.logo{
 		font-size: 16px;
 	}
-	.search_form{
+	.input-form{
+		order: 4;
+		margin-top: 1em;
 	}
 	.search_form > input{
 		width: 280px;
 	}
 	.search_form > button{
-		display: none;
+
 	}
 	#username_login{
 		color: #333333;
@@ -465,6 +467,10 @@ footer ul > li > a{
 		font-size: 16px;
 		line-height: 19px;
 		text-align: right;
+	}
+	.btn{
+		display: flex;
+		order: 2;
 	}
 	/*--------------------------------TABS------------------*/
 	.tabs{
@@ -484,23 +490,31 @@ footer ul > li > a{
 		font-size: 20px;
 	}
 	.news_list{
-		flex-direction: column;
+		grid-template-columns: 0.5fr 0.5fr;
+		place-items: start;
+		row-gap: .5em;
 	}
 	.news_topic{
 		margin-top: 8px;
 	}
+	.news__description{
+		font-size: .8rem;
+	}
 	/*---------------------------------------GENRES-------------------------*/
 	.genres{
 		margin-top: 16px;
-		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 0.5fr 0.5fr;
+		place-items: start;
 	}
 	.genre > p:nth-child(2){
 		margin: 32px 0 24px;
 		font-size: 20px;
 		line-height: 24px;
 		color: #ffffff;
+	}
+	.genres li{
+		width: 100%;
 	}
 	.genre{
 		margin-bottom: 15px;
@@ -510,11 +524,12 @@ footer ul > li > a{
 		margin-top: 27px;
 		max-height: 696px;
 		max-width: 100%;
+		padding: 5px;
 	}
 	.channel_list__item{
 		display: flex;
-		height: 100px;
-		width: 300px;
+		width: 100%;
+		max-height: 130px;
 		border-radius: 8px;
 		background: #F2F2F2;
 		margin-bottom: 16px;
@@ -534,13 +549,13 @@ footer ul > li > a{
 	.channel__header{
 		margin: 10px 0 8px;
 		font-weight: 500;
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 24px;
 		color: #333333;
 	}
 	.channel__program > ul > li{
 		margin-bottom: 6px;
-		font-size: 6px;
+		font-size: 12px;
 		line-height: 11px;
 	}
 	.channel__program > ul > li:nth-child(1){
